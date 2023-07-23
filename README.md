@@ -2,7 +2,7 @@
 # SCP-012
 
 SCP-012 is a plugin for SCP: Secret Laboratory that utilizes the EXILED framework.\
-It implements SCP-012 with its corresponding room, using Michal78900's MapEditorReborn plugin.\
+It implements SCP-012 with its corresponding room, using Michal78900's MapEditorReborn plugin.
 
 ![scp012](https://cdn.discordapp.com/attachments/912293094609801257/1132690923428511744/SCP012-5.png)
 ## Features
