@@ -35,7 +35,7 @@ If you have multiple maps, set the following option to "Merge" (screenshot2).
 
 - [@SmusiJarviss](https://www.github.com/SmusiJarviss) - SCP-012 Plugin
 - [@Parrot](https://www.github.com/PaRRoT-tm) - SCP-012 Schematic
-- [@Michal78900](@https://github.com/Michal78900) - MapEditorReborn Plugin
+- [@Michal78900](https://github.com/Michal78900) - MapEditorReborn Plugin
 
 
 ## Contacts
