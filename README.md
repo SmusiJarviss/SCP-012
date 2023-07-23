@@ -16,8 +16,8 @@ It implements SCP-012 with its corresponding room, using Michal78900's MapEditor
 
 ## How to install
 
-Follow the steps below to perform a correct installation of the plugin:
-An updated version of MapEditorReborn is already provided in the release.
+Follow the steps below to perform a correct installation of the plugin:\
+*An updated version of MapEditorReborn is already provided in the release.*
 
     1) Download Plugin.tar.gz from LINKTODO.
     2) Place SCP012.dll and MapEditorReborn.dll into the EXILED\Plugins folder.
