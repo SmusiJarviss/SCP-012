@@ -16,7 +16,7 @@ public class SCP012
 
     private bool isAnimationPlayed;
 
-    public void OnRoundStarted() => CoroutineHandle.Add(Timing.RunCoroutine(CheckPlayers()));
+    public void OnRoundStarted() => Timing.CallDelayed(15f, () => CoroutineHandle.Add(Timing.RunCoroutine(CheckPlayers())));
 
     public void OnRoundEnded(RoundEndedEventArgs _)
     {
