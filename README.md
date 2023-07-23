@@ -22,12 +22,12 @@ Follow the steps below to perform a correct installation of the plugin:\
     1) Download Plugin.tar.gz from LINKTODO.
     2) Place SCP012.dll and MapEditorReborn.dll into the EXILED\Plugins folder.
     3) Move the contents of the Schematics and Maps folders to EXILED/Configs/MapEditorReborn/Schematics and EXILED/Configs/MapEditorReborn/Maps respectively.
-    4) Open the EXILED/Configs/[server_port]-config.yml file, navigate to the MapEditorReborn configs, and set the map generation to "on_generated" (screenshot1).
+    4) Open the EXILED/Configs/[server_port]-config.yml file, navigate to the MapEditorReborn configs, and set the map generation to "on_generated".
 
 ![Screenshot1](https://cdn.discordapp.com/attachments/912293094609801257/1132689399004528650/Immagine_2023-07-23_170011.png)
 
 Optional:
-If you have multiple maps, set the following option to "Merge" (screenshot2).
+If you have multiple maps, set the following option to "Merge".
 
 ![Screenshot2](https://cdn.discordapp.com/attachments/912293094609801257/1132689399272972358/Immagine_2023-07-23_170113.png)
 
