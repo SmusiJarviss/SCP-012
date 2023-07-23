@@ -19,7 +19,7 @@ It implements SCP-012 with its corresponding room, using Michal78900's MapEditor
 Follow the steps below to perform a correct installation of the plugin:\
 *An updated version of MapEditorReborn is already provided in the release.*
 
-    1) Download Plugin.tar.gz from [here](https://github.com/SmusiJarviss/SCP-012/releases/tag/1.0.0).
+    1) Download Plugin.tar.gz from https://github.com/SmusiJarviss/SCP-012/releases/latest.
     2) Place SCP012.dll and MapEditorReborn.dll into the EXILED\Plugins folder.
     3) Move the contents of the Schematics and Maps folders to EXILED/Configs/MapEditorReborn/Schematics and EXILED/Configs/MapEditorReborn/Maps respectively.
     4) Open the EXILED/Configs/[server_port]-config.yml file, navigate to the MapEditorReborn configs, and set the map generation to "on_generated".
