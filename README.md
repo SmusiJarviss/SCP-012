@@ -29,7 +29,7 @@ Follow the steps below to perform a correct installation of the plugin:\
 Optional:
 If you have multiple maps, set the following option to "Merge".
 > [!NOTE]
-> Map name doesent need to bee SCP012Map, you just need to merge scp012 map with youre current
+> Map name doesent need to be SCP012Map, you just need to merge scp012 map with youre current
 
 ![Screenshot2](https://cdn.discordapp.com/attachments/912293094609801257/1132689399272972358/Immagine_2023-07-23_170113.png)
 
