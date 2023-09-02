@@ -10,9 +10,9 @@ public class Plugin : Plugin<Config>
 
     public override string Author => "Smusi Jarvis";
 
-    public override Version Version => new(1, 0, 1);
+    public override Version Version => new(1, 1, 0);
 
-    public override Version RequiredExiledVersion => new Version(7, 2, 0);
+    public override Version RequiredExiledVersion => new Version(8, 0, 2);
 
     public static Plugin Singleton { get; private set; }
 
