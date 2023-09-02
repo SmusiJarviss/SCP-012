@@ -3,8 +3,7 @@
 using Exiled.API.Enums;
 using Exiled.API.Features;
 using Exiled.Events.EventArgs.Server;
-using MapEditorReborn.API;
-using MapEditorReborn.API.Features.Objects;
+using global::SCP012.Controllers;
 using MEC;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,20 +15,17 @@ public class SCP012
 
     private bool isAnimationPlayed;
 
-    public void OnRoundStarted() => Timing.CallDelayed(15f, () => CoroutineHandle.Add(Timing.RunCoroutine(CheckPlayers())));
+    public void OnRoundStarted() => Timing.CallDelayed(3f, () => CoroutineHandle.Add(Timing.RunCoroutine(CheckPlayers())));
 
     public void OnRoundEnded(RoundEndedEventArgs _)
     {
-        Timing.KillCoroutines(CoroutineHandle.ToArray()); 
+        Timing.KillCoroutines(CoroutineHandle.ToArray());
         isAnimationPlayed = false;
     }
 
     private IEnumerator<float> CheckPlayers()
     {
-        MapEditorObject SCP012Containment = API.SpawnedObjects.FirstOrDefault(x => x is SchematicObject schematic && schematic.name == "CustomSchematic-SCP012Containment");
-        MapEditorObject SCP012Object = API.SpawnedObjects.First(x => x is PrimitiveObject obj && obj.Base.Color == "#FFFFFF55");
-
-        if (SCP012Object is null || SCP012Containment is null)
+        if (!MapController.InitializeMap())
         {
             Log.Error("SCP012 is null, it will not affect player anymore.");
             yield break;
@@ -38,19 +34,19 @@ public class SCP012
         while (Round.IsStarted)
         {
             yield return Timing.WaitForSeconds(0.65f);
-            
-            foreach (Player player in Player.List.Where(x => !x.IsTutorial && !x.IsScp && !x.IsGodModeEnabled && x.IsValidTarget(SCP012Object.Position, Plugin.Singleton.Config.AttractionDistance)))
+
+            foreach (Player player in Player.List.Where(x => !x.IsTutorial && !x.IsScp && !x.IsGodModeEnabled && x.IsValidTarget(MapController.SCP012Object.Position, Plugin.Singleton.Config.AttractionDistance)))
             {
                 if (!isAnimationPlayed)
                 {
-                    (SCP012Containment as SchematicObject).AnimationController.Play("SCP012_Start", "Containment");
+                    MapController.SCP012Containment.AnimationController.Play("SCP012_Start", "Containment");
                     isAnimationPlayed = true;
                 }
 
                 player.EnableEffects(Plugin.Singleton.Config.InitialEffects, 10f);
-                player.Position = Vector3.MoveTowards(player.Position, SCP012Object.Position, Plugin.Singleton.Config.AttractionForce);
+                player.Position = Vector3.MoveTowards(player.Position, MapController.SCP012Object.Position, Plugin.Singleton.Config.AttractionForce);
 
-                if (player.IsValidTarget(SCP012Object.Position, Plugin.Singleton.Config.KillDistance))
+                if (player.IsValidTarget(MapController.SCP012Object.Position, Plugin.Singleton.Config.KillDistance))
                 {
                     player.DisableAllEffects();
                     player.EnableEffect(EffectType.Ensnared, 500f);

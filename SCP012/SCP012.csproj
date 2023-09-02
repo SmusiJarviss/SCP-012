@@ -52,38 +52,24 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp-firstpass">
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\OMEGA_REFERENCES\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-CSharp-Publicized">
-      <HintPath>..\..\..\OMEGA_REFERENCES\Assembly-CSharp-Publicized.dll</HintPath>
+    <Reference Include="Assembly-CSharp-Publicized, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EXILED.8.0.0-beta.1\lib\net48\Assembly-CSharp-Publicized.dll</HintPath>
     </Reference>
     <Reference Include="CommandSystem.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\CommandSystem.Core.dll</HintPath>
+      <HintPath>..\packages\EXILED.8.0.0-beta.1\lib\net48\CommandSystem.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.API, Version=7.2.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\Exiled.API.dll</HintPath>
+    <Reference Include="Exiled.API, Version=8.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EXILED\Plugins\dependencies\Exiled.API.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.CreditTags, Version=7.2.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\Exiled.CreditTags.dll</HintPath>
-    </Reference>
-    <Reference Include="Exiled.CustomItems, Version=7.2.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\Exiled.CustomItems.dll</HintPath>
-    </Reference>
-    <Reference Include="Exiled.CustomRoles, Version=7.2.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\Exiled.CustomRoles.dll</HintPath>
-    </Reference>
-    <Reference Include="Exiled.Events, Version=7.2.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\Exiled.Events.dll</HintPath>
-    </Reference>
-    <Reference Include="Exiled.Loader, Version=7.2.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\Exiled.Loader.dll</HintPath>
-    </Reference>
-    <Reference Include="Exiled.Permissions, Version=7.2.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\Exiled.Permissions.dll</HintPath>
-    </Reference>
-    <Reference Include="Exiled.Updater, Version=3.1.2.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\Exiled.Updater.dll</HintPath>
+    <Reference Include="Exiled.Events, Version=8.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EXILED\Plugins\Exiled.Events.dll</HintPath>
     </Reference>
     <Reference Include="MapEditorReborn, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -92,20 +78,14 @@
     <Reference Include="Mirror">
       <HintPath>..\..\..\OMEGA_REFERENCES\Mirror.dll</HintPath>
     </Reference>
-    <Reference Include="NorthwoodLib, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\NorthwoodLib.dll</HintPath>
+    <Reference Include="NorthwoodLib, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EXILED.8.0.0-beta.1\lib\net48\NorthwoodLib.dll</HintPath>
     </Reference>
-    <Reference Include="PluginAPI, Version=13.1.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\PluginAPI.dll</HintPath>
+    <Reference Include="PluginAPI, Version=12.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\EXILED.8.0.0-beta.1\lib\net48\PluginAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
     <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\OMEGA_REFERENCES\UnityEngine.AnimationModule.dll</HintPath>
@@ -117,11 +97,12 @@
       <HintPath>..\..\..\OMEGA_REFERENCES\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="YamlDotNet, Version=11.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
-      <HintPath>..\packages\EXILED.7.2.0\lib\net48\YamlDotNet.dll</HintPath>
+      <HintPath>..\packages\EXILED.8.0.0-beta.1\lib\net48\YamlDotNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Logic\SCP012.cs" />
     <Compile Include="Plugin.cs" />
